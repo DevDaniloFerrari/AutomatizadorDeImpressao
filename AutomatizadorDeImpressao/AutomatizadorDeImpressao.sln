@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F412BBDB-25EE-4C3F-8715-8E8024824BB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{9419CC5D-A804-49F4-AF43-485BDEA02D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatizadorDeImpressao.Domain", "app\AutomatizadorDeImpressao.Domain\AutomatizadorDeImpressao.Domain.csproj", "{1B7A7E16-BE42-4366-903D-E83058598B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatizadorDeImpressao.UI.WindowsService", "app\AutomatizadorDeImpressao.UI.WindowsService\AutomatizadorDeImpressao.UI.WindowsService.csproj", "{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B7A7E16-BE42-4366-903D-E83058598B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7A7E16-BE42-4366-903D-E83058598B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7A7E16-BE42-4366-903D-E83058598B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7A7E16-BE42-4366-903D-E83058598B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B7A7E16-BE42-4366-903D-E83058598B34} = {F412BBDB-25EE-4C3F-8715-8E8024824BB5}
+		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362} = {9419CC5D-A804-49F4-AF43-485BDEA02D19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {758F0F28-D0D1-4249-BBF6-3DB14747540D}
+	EndGlobalSection
+EndGlobal
