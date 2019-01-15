@@ -1,0 +1,6 @@
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Debug\AutomatizadorDeImpressao.Domain.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Debug\AutomatizadorDeImpressao.Domain.pdb
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Debug\AutomatizadorDeImpressao.Domain.csprojAssemblyReference.cache
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Debug\AutomatizadorDeImpressao.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Debug\AutomatizadorDeImpressao.Domain.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Debug\AutomatizadorDeImpressao.Domain.pdb
