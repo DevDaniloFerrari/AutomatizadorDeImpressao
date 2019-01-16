@@ -13,15 +13,27 @@ namespace AutomatizadorDeImpressao.Domain
     {
         List<Arquivo> arquivos = new List<Arquivo>();
 
+        public void Iniciar()
+        {
+            if (this.VerificarArquivos())
+            {
+
+            }
+        }
+
+        public bool VerificarArquivos()
+        {
+            string caminho = ConfigurationManager.AppSettings[Constantes.CAMINHO_DOS_ARQUIVOS];
+
+            if (File.Exists(caminho))
+            {
+                return true;
+            }
+
+            return false;
+        }
 
 
     }
 
-    /*public bool VerificarArquivos()
-    {
-        string caminho = ConfigurationManager.AppSettings[Constantes.CAMINHO_DOS_ARQUIVOS];
-        if (File.Exists(caminho))
-            return true;
-        return false;
-    }*/
 }

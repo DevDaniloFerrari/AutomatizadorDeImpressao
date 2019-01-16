@@ -1,0 +1,14 @@
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\AutomatizadorDeImpressao.UI.WindowsForms.exe.config
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\AutomatizadorDeImpressao.UI.WindowsForms.exe
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\AutomatizadorDeImpressao.UI.WindowsForms.pdb
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\AutomatizadorDeImpressao.Domain.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\AutomatizadorDeImpressao.Domain.pdb
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\AutomatizadorDeImpressao.Domain.dll.config
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.csprojAssemblyReference.cache
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.Form1.resources
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.Properties.Resources.resources
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.csproj.GenerateResource.cache
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.csproj.CoreCompileInputs.cache
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.csproj.CopyComplete
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.exe
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.pdb

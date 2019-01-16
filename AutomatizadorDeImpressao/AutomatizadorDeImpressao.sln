@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatizadorDeImpressao.Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatizadorDeImpressao.UI.WindowsService", "app\AutomatizadorDeImpressao.UI.WindowsService\AutomatizadorDeImpressao.UI.WindowsService.csproj", "{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatizadorDeImpressao.UI.WindowsForms", "app\AutomatizadorDeImpressao.UI.WindowsForms\AutomatizadorDeImpressao.UI.WindowsForms.csproj", "{9191728B-4741-4E38-BFFD-2F34F69EFFFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9191728B-4741-4E38-BFFD-2F34F69EFFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9191728B-4741-4E38-BFFD-2F34F69EFFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9191728B-4741-4E38-BFFD-2F34F69EFFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9191728B-4741-4E38-BFFD-2F34F69EFFFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1B7A7E16-BE42-4366-903D-E83058598B34} = {F412BBDB-25EE-4C3F-8715-8E8024824BB5}
 		{4AA6DB43-5580-4CCD-BE3D-AD479F5B6362} = {9419CC5D-A804-49F4-AF43-485BDEA02D19}
+		{9191728B-4741-4E38-BFFD-2F34F69EFFFF} = {9419CC5D-A804-49F4-AF43-485BDEA02D19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {758F0F28-D0D1-4249-BBF6-3DB14747540D}
