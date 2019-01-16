@@ -6,7 +6,7 @@
         public Impressora(string nome, Arquivo arquivo)
         {
             this.nome = nome;
-            this.quantidadeDeCopias = arquivo.copias;
+            this.quantidadeDeCopias = arquivo.Copias;
         }
 
         public string nome { get; set; }

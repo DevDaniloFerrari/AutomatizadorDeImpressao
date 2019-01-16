@@ -2,18 +2,18 @@
 {
     public class Arquivo
     {
-        public Arquivo(string nome, string local, string extensão, int copias)
+        public Arquivo(string nome, string diretorio, string extensao, int copias)
         {
-            this.nome = nome;
-            this.local = local;
-            this.extensão = extensão;
-            this.copias = copias;
+            this.Nome = nome;
+            this.Diretorio = diretorio;
+            this.Extensao = extensao;
+            this.Copias = copias;
         }
 
-        public string nome { get; private set; }
-        public string local { get; private set; }
-        public string extensão { get; private set; }
-        public int copias { get; private set; }
+        public string Nome { get; private set; }
+        public string Diretorio { get; private set; }
+        public string Extensao { get; private set; }
+        public int Copias { get; private set; }
 
     }
 }

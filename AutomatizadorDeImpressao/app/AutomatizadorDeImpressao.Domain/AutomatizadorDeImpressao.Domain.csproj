@@ -45,6 +45,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Constantes.cs" />
     <Compile Include="Entities\Arquivo.cs" />
+    <Compile Include="Entities\GerenciadorDeArquivos.cs" />
     <Compile Include="Entities\Impressora.cs" />
     <Compile Include="Orquestrador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
