@@ -1,7 +1,0 @@
-D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Debug\AutomatizadorDeImpressao.UI.WindowsService.exe.config
-D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Debug\AutomatizadorDeImpressao.UI.WindowsService.exe
-D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Debug\AutomatizadorDeImpressao.UI.WindowsService.pdb
-D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\obj\Debug\AutomatizadorDeImpressao.UI.WindowsService.csprojAssemblyReference.cache
-D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\obj\Debug\AutomatizadorDeImpressao.UI.WindowsService.csproj.CoreCompileInputs.cache
-D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\obj\Debug\AutomatizadorDeImpressao.UI.WindowsService.exe
-D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\obj\Debug\AutomatizadorDeImpressao.UI.WindowsService.pdb
