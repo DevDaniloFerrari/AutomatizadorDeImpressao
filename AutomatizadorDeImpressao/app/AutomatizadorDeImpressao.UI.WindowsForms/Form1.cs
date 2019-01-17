@@ -19,6 +19,13 @@ namespace AutomatizadorDeImpressao.UI.WindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            foreach (string printer in System.Drawing.Printing.PrinterSettings.InstalledPrinters)
+            {
+                MessageBox.Show(printer);
+            }
+
+
             var orquestrador = new Domain.Orquestrador();
             
             orquestrador.Iniciar();

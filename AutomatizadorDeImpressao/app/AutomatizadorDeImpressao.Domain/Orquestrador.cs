@@ -1,4 +1,5 @@
-﻿using AutomatizadorDeImpressao.Domain.Entities;
+﻿using AutomatizadorDeImpressao.Domain.Entidades;
+using AutomatizadorDeImpressao.Domain.Gerenciadores;
 using System;
 using System.Collections.Generic;
 using System.Configuration;

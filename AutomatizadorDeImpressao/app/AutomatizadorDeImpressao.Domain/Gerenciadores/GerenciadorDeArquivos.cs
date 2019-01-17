@@ -1,11 +1,12 @@
-﻿using System;
+﻿using AutomatizadorDeImpressao.Domain.Entidades;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutomatizadorDeImpressao.Domain.Entities
+namespace AutomatizadorDeImpressao.Domain.Gerenciadores
 {
     public class GerenciadorDeArquivos
     {

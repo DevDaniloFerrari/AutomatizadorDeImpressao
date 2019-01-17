@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -44,11 +47,15 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Constantes.cs" />
-    <Compile Include="Entities\Arquivo.cs" />
-    <Compile Include="Entities\GerenciadorDeArquivos.cs" />
-    <Compile Include="Entities\Impressora.cs" />
+    <Compile Include="Entidades\Arquivo.cs" />
+    <Compile Include="Gerenciadores\GerenciadorDeArquivos.cs" />
+    <Compile Include="Gerenciadores\GerenciadorDeImpressora.cs" />
+    <Compile Include="Entidades\Impressora.cs" />
     <Compile Include="Orquestrador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

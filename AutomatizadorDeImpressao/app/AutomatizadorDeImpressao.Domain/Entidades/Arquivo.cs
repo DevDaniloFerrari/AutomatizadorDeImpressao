@@ -1,4 +1,4 @@
-﻿namespace AutomatizadorDeImpressao.Domain.Entities
+﻿namespace AutomatizadorDeImpressao.Domain.Entidades
 {
     public class Arquivo
     {
