@@ -15,13 +15,18 @@ namespace AutomatizadorDeImpressao.Domain
         private static List<Arquivo> arquivos = new List<Arquivo>();
         private static DirectoryInfo directoryInfo = null;
         private static FileInfo[] Files = null;
+        private static Impressora impressora = GerenciadorDeImpressora.ObterImpressora(ConfigurationManager.AppSettings[Constantes.NOME_DA_IMPRESSORA]);
 
         public void Iniciar()
         {
             this.VerificarArquivos();
 
-            if (arquivos.Count!=0)
+            if (arquivos.Count != 0)
             {
+                foreach (Arquivo arquivo in arquivos)
+                {
+                    GerenciadorDeImpressora.ImprimirPDF(impressora, arquivo);
+                }
 
             }
 
@@ -35,11 +40,12 @@ namespace AutomatizadorDeImpressao.Domain
             Files = directoryInfo.GetFiles("*IMPRIMIR*");
 
 
-            if (Files.Length!=0)
+            if (Files.Length != 0)
             {
                 foreach (FileInfo fileInfo in Files)
                 {
-                    GerenciadorDeArquivos.AdicionarArquivo(arquivos, fileInfo);
+                    if (fileInfo.Extension == ".pdf")
+                        GerenciadorDeArquivos.AdicionarArquivo(arquivos, fileInfo);
                 }
 
             }
