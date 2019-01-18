@@ -58,7 +58,7 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
                 }
 
                 // Now print the PDF document
-                using (var document = PdfDocument.Load(arquivo.Diretorio+@"\"+arquivo.Nome))
+                using (var document = PdfDocument.Load((arquivo.Diretorio + @"\" + arquivo.Nome)))
                 {
                     using (var printDocument = document.CreatePrintDocument())
                     {
@@ -70,7 +70,7 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
                 }
                 return true;
             }
-            catch
+            catch(Exception e)
             {
                 return false;
             }

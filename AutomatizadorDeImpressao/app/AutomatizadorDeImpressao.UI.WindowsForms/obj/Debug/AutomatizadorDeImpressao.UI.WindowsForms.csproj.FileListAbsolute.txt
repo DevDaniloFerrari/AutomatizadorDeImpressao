@@ -27,3 +27,4 @@ C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorD
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.csproj.CopyComplete
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.exe
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.pdb
+C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\x86\pdfium.dll
