@@ -48,7 +48,7 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
 
             Directory.CreateDirectory(pasta);
 
-            File.Move((arquivo.Diretorio+@"\"+arquivo.Nome),pasta);
+            File.Move((arquivo.Diretorio+@"\"+arquivo.Nome),(pasta+@"\"+arquivo.Nome));
 
         }
     }

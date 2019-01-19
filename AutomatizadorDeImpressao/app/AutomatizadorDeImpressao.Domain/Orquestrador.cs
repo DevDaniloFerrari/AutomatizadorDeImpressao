@@ -32,6 +32,7 @@ namespace AutomatizadorDeImpressao.Domain
 
             Thread.Sleep(tempo);
 
+            arquivos.Clear();
             this.Iniciar();
         }
 

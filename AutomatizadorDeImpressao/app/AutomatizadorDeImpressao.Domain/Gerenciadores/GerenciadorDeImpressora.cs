@@ -9,7 +9,7 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
     public class GerenciadorDeImpressora
     {
 
-        public static Impressora ObterImpressora(String nomeDaImpressora)
+        public static Impressora ObterImpressora(string nomeDaImpressora)
         {
             var printerQuery = new ManagementObjectSearcher(String.Format("SELECT * from Win32_Printer WHERE Name = '{0}'", nomeDaImpressora));
 
@@ -32,10 +32,11 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
 
         }
 
-        public static bool ImprimirPDF(Impressora impressora, Arquivo arquivo)
+        public static void ImprimirPDF(Impressora impressora, Arquivo arquivo)
         {
             try
             {
+
                 // Create the printer settings for our printer
                 var printerSettings = new PrinterSettings
                 {
@@ -67,15 +68,18 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
                         printDocument.PrintController = new StandardPrintController();
                         printDocument.Print();
 
+                        document.Dispose();
+
                         GerenciadorDeArquivos.Mover(arquivo);
                     }
                 }
-                return true;
+
             }
             catch(Exception e)
             {
-                return false;
+
             }
         }
+
     }
 }
