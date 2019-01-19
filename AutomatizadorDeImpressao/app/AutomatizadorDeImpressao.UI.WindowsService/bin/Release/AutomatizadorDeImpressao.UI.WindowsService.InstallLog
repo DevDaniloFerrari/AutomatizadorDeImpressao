@@ -19,3 +19,24 @@ Affected parameters are:
 Removing EventLog source Automatizador De Impressao.
 Service Automatizador De Impressao is being removed from the system...
 Service Automatizador De Impressao was successfully removed from the system.
+Installing assembly 'D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.InstallLog
+   assemblypath = D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.exe
+Installing service Automatizador De Impressao...
+Service Automatizador De Impressao has been successfully installed.
+Creating EventLog source Automatizador De Impressao in log Application...
+Committing assembly 'D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.InstallLog
+   assemblypath = D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.exe
+Uninstalling assembly 'D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.InstallLog
+   assemblypath = D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsService\bin\Release\AutomatizadorDeImpressao.UI.WindowsService.exe
+Removing EventLog source Automatizador De Impressao.
+Service Automatizador De Impressao is being removed from the system...
+Service Automatizador De Impressao was successfully removed from the system.
