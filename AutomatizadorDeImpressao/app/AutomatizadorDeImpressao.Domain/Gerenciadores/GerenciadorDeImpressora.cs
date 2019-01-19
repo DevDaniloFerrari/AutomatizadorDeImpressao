@@ -66,6 +66,8 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
                         printDocument.DefaultPageSettings = pageSettings;
                         printDocument.PrintController = new StandardPrintController();
                         printDocument.Print();
+
+                        GerenciadorDeArquivos.Mover(arquivo);
                     }
                 }
                 return true;

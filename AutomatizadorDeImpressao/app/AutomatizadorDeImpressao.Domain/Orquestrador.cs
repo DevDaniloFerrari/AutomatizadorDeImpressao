@@ -4,9 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace AutomatizadorDeImpressao.Domain
 {
@@ -30,6 +28,11 @@ namespace AutomatizadorDeImpressao.Domain
 
             }
 
+            int tempo = Convert.ToInt32(ConfigurationManager.AppSettings[Constantes.INTERVALO_DE_RECURSAO]);
+
+            Thread.Sleep(tempo);
+
+            this.Iniciar();
         }
 
         public List<Arquivo> VerificarArquivos()

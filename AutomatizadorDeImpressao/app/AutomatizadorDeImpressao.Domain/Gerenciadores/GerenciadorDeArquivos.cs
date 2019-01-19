@@ -1,10 +1,8 @@
 ﻿using AutomatizadorDeImpressao.Domain.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutomatizadorDeImpressao.Domain.Gerenciadores
 {
@@ -20,7 +18,7 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
             string extensao = fileInfo.Extension;
             int copias = ObterQuantidadeDeCopias(fileInfo);
 
-            arquivo = new Arquivo(nome,diretorio,extensao,copias);
+            arquivo = new Arquivo(nome, diretorio, extensao, copias);
 
             arquivos.Add(arquivo);
         }
@@ -39,7 +37,19 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
             {
                 return 0;
             }
-            
+
+        }
+
+        public static void Mover(Arquivo arquivo)
+        {
+            string pasta = ConfigurationManager.AppSettings[Constantes.CAMINHO_DOS_ARQUIVOS_IMPRESSOS]
+                           +  @"\" +
+                           ConfigurationManager.AppSettings[Constantes.NOME_DA_PASTA_DE_ARQUIVOS_IMPRESSOS];
+
+            Directory.CreateDirectory(pasta);
+
+            File.Move((arquivo.Diretorio+@"\"+arquivo.Nome),pasta);
+
         }
     }
 }
