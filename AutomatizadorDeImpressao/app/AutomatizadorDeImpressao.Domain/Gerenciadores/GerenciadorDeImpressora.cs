@@ -19,7 +19,17 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
             {
 
                 string nome = Convert.ToString(printer.GetPropertyValue("Name"));
-                string status = Convert.ToString(printer.GetPropertyValue("Status"));
+                string status = "";
+
+                if (Convert.ToString(printer["WorkOffline"].ToString().ToLower()) == "false")
+                {
+                    status = "Ligada";
+                }
+                else
+                {
+                    status = "Desligada";
+                }
+
                 bool principal = Convert.ToBoolean(printer.GetPropertyValue("Default"));
                 bool rede = Convert.ToBoolean(printer.GetPropertyValue("Network"));
 
@@ -36,46 +46,48 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
         {
             try
             {
-
-                // Create the printer settings for our printer
-                var printerSettings = new PrinterSettings
+                if (impressora.Status == "Ligada")
                 {
-                    PrinterName = impressora.Nome,
-                    Copies = (short)arquivo.Copias,
-                };
-
-                // Create our page settings for the paper size selected
-                var pageSettings = new PageSettings(printerSettings)
-                {
-                    Margins = new Margins(0, 0, 0, 0),
-                };
-                foreach (PaperSize paperSize in printerSettings.PaperSizes)
-                {
-                    if (paperSize.PaperName == arquivo.Nome)
+                    // Create the printer settings for our printer
+                    var printerSettings = new PrinterSettings
                     {
-                        pageSettings.PaperSize = paperSize;
-                        break;
+                        PrinterName = impressora.Nome,
+                        Copies = (short)arquivo.Copias,
+                    };
+
+                    // Create our page settings for the paper size selected
+                    var pageSettings = new PageSettings(printerSettings)
+                    {
+                        Margins = new Margins(0, 0, 0, 0),
+                    };
+                    foreach (PaperSize paperSize in printerSettings.PaperSizes)
+                    {
+                        if (paperSize.PaperName == arquivo.Nome)
+                        {
+                            pageSettings.PaperSize = paperSize;
+                            break;
+                        }
                     }
-                }
 
-                // Now print the PDF document
-                using (var document = PdfDocument.Load((arquivo.Diretorio + @"\" + arquivo.Nome)))
-                {
-                    using (var printDocument = document.CreatePrintDocument())
+                    // Now print the PDF document
+                    using (var document = PdfDocument.Load((arquivo.Diretorio + @"\" + arquivo.Nome)))
                     {
-                        printDocument.PrinterSettings = printerSettings;
-                        printDocument.DefaultPageSettings = pageSettings;
-                        printDocument.PrintController = new StandardPrintController();
-                        printDocument.Print();
+                        using (var printDocument = document.CreatePrintDocument())
+                        {
+                            printDocument.PrinterSettings = printerSettings;
+                            printDocument.DefaultPageSettings = pageSettings;
+                            printDocument.PrintController = new StandardPrintController();
+                            printDocument.Print();
 
-                        document.Dispose();
+                            document.Dispose();
 
-                        GerenciadorDeArquivos.Mover(arquivo);
+                            GerenciadorDeArquivos.Mover(arquivo);
+                        }
                     }
                 }
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
 
             }

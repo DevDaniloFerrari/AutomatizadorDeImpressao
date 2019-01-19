@@ -13,7 +13,7 @@ namespace AutomatizadorDeImpressao.Domain
         private static List<Arquivo> arquivos = new List<Arquivo>();
         private static DirectoryInfo directoryInfo = null;
         private static FileInfo[] Files = null;
-        private static Impressora impressora = GerenciadorDeImpressora.ObterImpressora(ConfigurationManager.AppSettings[Constantes.NOME_DA_IMPRESSORA]);
+        private static Impressora impressora;
 
         public void Iniciar()
         {
@@ -23,6 +23,7 @@ namespace AutomatizadorDeImpressao.Domain
             {
                 foreach (Arquivo arquivo in arquivos)
                 {
+                    impressora = GerenciadorDeImpressora.ObterImpressora(ConfigurationManager.AppSettings[Constantes.NOME_DA_IMPRESSORA]);
                     GerenciadorDeImpressora.ImprimirPDF(impressora, arquivo);
                 }
 
