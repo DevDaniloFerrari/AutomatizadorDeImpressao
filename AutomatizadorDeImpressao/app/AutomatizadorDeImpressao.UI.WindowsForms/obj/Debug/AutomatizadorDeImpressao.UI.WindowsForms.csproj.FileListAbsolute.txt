@@ -28,3 +28,7 @@ C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorD
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.exe
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\obj\Debug\AutomatizadorDeImpressao.UI.WindowsForms.pdb
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\x86\pdfium.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\x86\pdfium.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\PdfiumViewer.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\PdfiumViewer.xml
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.UI.WindowsForms\bin\Debug\nl\PdfiumViewer.resources.dll

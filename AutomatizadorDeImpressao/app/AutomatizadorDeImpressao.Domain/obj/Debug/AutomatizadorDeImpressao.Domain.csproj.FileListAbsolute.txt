@@ -15,3 +15,8 @@ C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorD
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Debug\AutomatizadorDeImpressao.Domain.pdb
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Debug\AutomatizadorDeImpressao.Domain.csprojAssemblyReference.cache
 C:\Projetos\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Debug\x86\pdfium.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Debug\x86\pdfium.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Debug\PdfiumViewer.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Debug\PdfiumViewer.xml
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Debug\nl\PdfiumViewer.resources.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Debug\AutomatizadorDeImpressao.Domain.csproj.CopyComplete

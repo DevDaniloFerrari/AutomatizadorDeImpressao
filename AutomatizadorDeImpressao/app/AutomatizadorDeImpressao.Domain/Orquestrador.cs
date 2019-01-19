@@ -8,12 +8,17 @@ using System.Threading;
 
 namespace AutomatizadorDeImpressao.Domain
 {
-    public class Orquestrador
+    public class Orquestrador : IDisposable
     {
         private static List<Arquivo> arquivos = new List<Arquivo>();
         private static DirectoryInfo directoryInfo = null;
         private static FileInfo[] Files = null;
         private static Impressora impressora;
+
+        public void Dispose()
+        {
+            //Nao precisa fazer nada
+        }
 
         public void Iniciar()
         {
@@ -37,7 +42,7 @@ namespace AutomatizadorDeImpressao.Domain
             this.Iniciar();
         }
 
-        public List<Arquivo> VerificarArquivos()
+        private List<Arquivo> VerificarArquivos()
         {
             string caminho = ConfigurationManager.AppSettings[Constantes.CAMINHO_DOS_ARQUIVOS];
 
