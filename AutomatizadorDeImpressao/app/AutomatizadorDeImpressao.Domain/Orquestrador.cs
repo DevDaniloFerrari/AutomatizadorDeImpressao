@@ -33,9 +33,8 @@ namespace AutomatizadorDeImpressao.Domain
 
             }
 
-            int tempo = Convert.ToInt32(ConfigurationManager.AppSettings[Constantes.INTERVALO_DE_RECURSAO]);
-
             arquivos.Clear();
+
         }
 
         private List<Arquivo> VerificarArquivos()

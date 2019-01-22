@@ -8,6 +8,5 @@
         public static readonly string CAMINHO_DOS_ARQUIVOS_IMPRESSOS = "CAMINHO_DOS_ARQUIVOS_IMPRESSOS";
         public static readonly string NOME_DA_PASTA_DE_ARQUIVOS_IMPRESSOS = "NOME_DA_PASTA_DE_ARQUIVOS_IMPRESSOS";
 
-        public static readonly string INTERVALO_DE_RECURSAO = "INTERVALO_DE_RECURSAO";
     }
 }

@@ -9,16 +9,13 @@ namespace AutomatizadorDeImpressao.UI.WindowsForms
         {
             InitializeComponent();
         }
-
         
-
         private void button1_Click(object sender, EventArgs e)
         {
-
-            var orquestrador = new Domain.Orquestrador();
-
-            orquestrador.Iniciar();
-
+            using (var orquestrador = new Domain.Orquestrador())
+            {
+                orquestrador.Iniciar();
+            }
         }
     }
 }
