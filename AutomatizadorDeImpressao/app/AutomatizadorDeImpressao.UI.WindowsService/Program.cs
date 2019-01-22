@@ -1,6 +1,4 @@
-﻿using System;
-using System.Configuration.Install;
-using System.Reflection;
+﻿using System.Reflection;
 using System.ServiceProcess;
 
 namespace AutomatizadorDeImpressao.UI.WindowsService
@@ -9,26 +7,29 @@ namespace AutomatizadorDeImpressao.UI.WindowsService
     {
         static void Main(string[] args)
         {
-            if (Environment.UserInteractive)
+
+            if (args.Length > 0)
             {
-                string parameter = string.Concat(args);
-                switch (parameter)
+                //Install service
+                if (args[0].Trim().ToLower() == "--install")
                 {
-                    case "--install":
-                        ManagedInstallerClass.InstallHelper(new[] { Assembly.GetExecutingAssembly().Location });
-                        break;
-                    case "--uninstall":
-                        ManagedInstallerClass.InstallHelper(new[] { "/u", Assembly.GetExecutingAssembly().Location });
-                        break;
+                    System.Configuration.Install.ManagedInstallerClass.InstallHelper(new string[] { "--install", Assembly.GetExecutingAssembly().Location });
+                }
+
+                //Uninstall service                 
+                else if (args[0].Trim().ToLower() == "--uninstall")
+                {
+                    System.Configuration.Install.ManagedInstallerClass.InstallHelper(new string[] { "--uninstall", Assembly.GetExecutingAssembly().Location });
                 }
             }
             else
             {
-                ServiceBase[] servicesToRun = new ServiceBase[]
-                                  {
-                              new Service()
-                                  };
-                ServiceBase.Run(servicesToRun);
+                ServiceBase[] ServicesToRun;
+                ServicesToRun = new ServiceBase[]
+                {
+                    new Service()
+                };
+                ServiceBase.Run(ServicesToRun);
             }
         }
     }

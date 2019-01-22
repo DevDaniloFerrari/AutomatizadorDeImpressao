@@ -1,14 +1,12 @@
 ﻿using AutomatizadorDeImpressao.Domain;
-using System;
-using System.IO;
+using System.Diagnostics;
 using System.ServiceProcess;
-using System.Timers;
+using System.Threading;
 
 namespace AutomatizadorDeImpressao.UI.WindowsService
 {
     public partial class Service : ServiceBase
     {
-        Timer timer = new Timer(); // name space(using System.Timers;)
         public Service()
         {
             InitializeComponent();
@@ -16,45 +14,25 @@ namespace AutomatizadorDeImpressao.UI.WindowsService
 
         protected override void OnStart(string[] args)
         {
-            WriteToFile("Service is started at " + DateTime.Now);
-            using (Orquestrador orquestrador = new Orquestrador())
-            {
-                orquestrador.Iniciar();
-            }
-            timer.Elapsed += new ElapsedEventHandler(OnElapsedTime);
-            timer.Interval = 5000; //number in milisecinds  
-            timer.Enabled = true;
+            EventLog.WriteEntry("Iniciou o servico de Impressao", EventLogEntryType.Warning);
+
+            ThreadStart start = new ThreadStart(IniciarServico);
+            Thread thread = new Thread(start);
+
+            thread.Start();
+
         }
+
         protected override void OnStop()
         {
-            WriteToFile("Service is stopped at " + DateTime.Now);
+            EventLog.WriteEntry("Parou o servico de Impressao", EventLogEntryType.Warning);
         }
-        private void OnElapsedTime(object source, ElapsedEventArgs e)
+
+        public void IniciarServico()
         {
-            WriteToFile("Service is recall at " + DateTime.Now);
-        }
-        public void WriteToFile(string Message)
-        {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";
-            if (!Directory.Exists(path))
+            using (var orquestrador = new Orquestrador())
             {
-                Directory.CreateDirectory(path);
-            }
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\ServiceLog_" + DateTime.Now.Date.ToShortDateString().Replace('/', '_') + ".txt";
-            if (!File.Exists(filepath))
-            {
-                // Create a file to write to.   
-                using (StreamWriter sw = File.CreateText(filepath))
-                {
-                    sw.WriteLine(Message);
-                }
-            }
-            else
-            {
-                using (StreamWriter sw = File.AppendText(filepath))
-                {
-                    sw.WriteLine(Message);
-                }
+                orquestrador.Iniciar();
             }
         }
     }

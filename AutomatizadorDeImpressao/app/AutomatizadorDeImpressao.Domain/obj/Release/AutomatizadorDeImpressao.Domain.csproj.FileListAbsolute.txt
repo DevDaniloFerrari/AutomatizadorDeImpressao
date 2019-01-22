@@ -4,6 +4,7 @@ D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\Automatizad
 D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Release\PdfiumViewer.dll
 D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Release\PdfiumViewer.xml
 D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\bin\Release\nl\PdfiumViewer.resources.dll
+D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Release\AutomatizadorDeImpressao.Domain.csprojAssemblyReference.cache
 D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Release\AutomatizadorDeImpressao.Domain.csproj.CoreCompileInputs.cache
 D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Release\AutomatizadorDeImpressao.Domain.csproj.CopyComplete
 D:\Projetos\C#\AutomatizadorDeImpressao\AutomatizadorDeImpressao\app\AutomatizadorDeImpressao.Domain\obj\Release\AutomatizadorDeImpressao.Domain.dll
