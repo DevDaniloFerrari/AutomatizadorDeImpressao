@@ -1,6 +1,7 @@
 ﻿using AutomatizadorDeImpressao.Domain.Entidades;
 using PdfiumViewer;
 using System;
+using System.Configuration;
 using System.Drawing.Printing;
 using System.Management;
 
@@ -9,11 +10,12 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
     public class GerenciadorDeImpressora
     {
 
-        public static Impressora ObterImpressora(string nomeDaImpressora)
+        public static void CarregarImpressora(Impressora impressora)
         {
-            var printerQuery = new ManagementObjectSearcher(String.Format("SELECT * from Win32_Printer WHERE Name = '{0}'", nomeDaImpressora));
 
-            Impressora impressora;
+            string nomeDaImpressora = ConfigurationManager.AppSettings[Constantes.NOME_DA_IMPRESSORA];
+
+            var printerQuery = new ManagementObjectSearcher(String.Format("SELECT * from Win32_Printer WHERE Name = '{0}'", nomeDaImpressora));
 
             foreach (var printer in printerQuery.Get())
             {
@@ -33,12 +35,9 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
                 bool principal = Convert.ToBoolean(printer.GetPropertyValue("Default"));
                 bool rede = Convert.ToBoolean(printer.GetPropertyValue("Network"));
 
-                impressora = new Impressora(nome, status, principal, rede);
-
-                return impressora;
+                impressora.PreencherDados(nome, status, principal, rede);
+                
             }
-
-            return null;
 
         }
 
@@ -48,18 +47,19 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
             {
                 if (impressora.Status == "Ligada")
                 {
-                    // Create the printer settings for our printer
+
                     var printerSettings = new PrinterSettings
                     {
                         PrinterName = impressora.Nome,
                         Copies = (short)arquivo.Copias,
                     };
 
-                    // Create our page settings for the paper size selected
+
                     var pageSettings = new PageSettings(printerSettings)
                     {
                         Margins = new Margins(0, 0, 0, 0),
                     };
+
                     foreach (PaperSize paperSize in printerSettings.PaperSizes)
                     {
                         if (paperSize.PaperName == arquivo.Nome)
@@ -69,7 +69,7 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
                         }
                     }
 
-                    // Now print the PDF document
+
                     using (var document = PdfDocument.Load((arquivo.Diretorio + @"\" + arquivo.Nome)))
                     {
                         using (var printDocument = document.CreatePrintDocument())
@@ -87,7 +87,7 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
                 }
 
             }
-            catch (Exception e)
+            catch (Exception exception)
             {
 
             }

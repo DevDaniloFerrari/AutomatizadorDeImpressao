@@ -10,6 +10,9 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
     {
 
         private static Arquivo arquivo = null;
+        private DirectoryInfo directoryInfo;
+
+        public FileInfo[] Files { get; private set; }
 
         public static void AdicionarArquivo(List<Arquivo> arquivos, FileInfo fileInfo)
         {
@@ -43,13 +46,33 @@ namespace AutomatizadorDeImpressao.Domain.Gerenciadores
         public static void Mover(Arquivo arquivo)
         {
             string pasta = ConfigurationManager.AppSettings[Constantes.CAMINHO_DOS_ARQUIVOS_IMPRESSOS]
-                           +  @"\" +
+                           + @"\" +
                            ConfigurationManager.AppSettings[Constantes.NOME_DA_PASTA_DE_ARQUIVOS_IMPRESSOS];
 
             Directory.CreateDirectory(pasta);
 
-            File.Move((arquivo.Diretorio+@"\"+arquivo.Nome),(pasta+@"\"+arquivo.Nome));
+            File.Move((arquivo.DiretorioCompleto), (pasta + @"\" + arquivo.Nome));
 
         }
+
+        public static void CarregarArquivos(List<Arquivo> arquivos)
+        {
+            string caminho = ConfigurationManager.AppSettings[Constantes.CAMINHO_DOS_ARQUIVOS];
+
+            DirectoryInfo directoryInfo = new DirectoryInfo(caminho);
+            FileInfo[] Files = directoryInfo.GetFiles("*IMPRIMIR*");
+
+            if (Files.Length != 0)
+            {
+                foreach (FileInfo fileInfo in Files)
+                {
+                    if (fileInfo.Extension == ".pdf")
+                        GerenciadorDeArquivos.AdicionarArquivo(arquivos, fileInfo);
+                }
+
+            }
+
+        }
+
     }
 }

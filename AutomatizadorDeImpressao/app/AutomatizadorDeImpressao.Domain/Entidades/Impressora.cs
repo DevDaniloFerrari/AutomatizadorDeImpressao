@@ -2,12 +2,9 @@
 {
     public class Impressora
     {
-        public Impressora(string nome, string status, bool principal, bool rede)
+
+        public Impressora()
         {
-            Nome = nome;
-            Status = status;
-            Principal = principal;
-            Rede = rede;
         }
 
         public string Nome { get; private set; }
@@ -15,5 +12,12 @@
         public bool Principal { get; private set; }
         public bool Rede { get; private set; }
 
+        public void PreencherDados(string nome, string status, bool principal, bool rede)
+        {
+            this.Nome = nome;
+            this.Status = status;
+            this.Principal = principal;
+            this.Rede = rede;
+        }
     }
 }
